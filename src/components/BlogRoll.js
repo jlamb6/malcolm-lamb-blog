@@ -11,48 +11,86 @@ class BlogRoll extends React.Component {
     return (
       <div className="columns is-multiline">
         {posts &&
-          posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
+          posts.map(({ node: post }, index) => {
+            if (index === 0) {
+              return (
+                <div className="column is-12" key={post.id}>
+                  <div className="columns">
+                    <div className="column is-7 thumbnail-large">
+                      {post.frontmatter.featuredimage ? (
+                        <div className="featured-thumbnail">
+                          <PreviewCompatibleImage
+                            imageInfo={{
+                              image: post.frontmatter.featuredimage,
+                              alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                            }}
+                          />
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
+                    <div className="column">
+                      <div className="px-2">
+                        <p className="has-text-grey has-text-weight-medium is-size-6">
+                          {post.frontmatter.date}
+                        </p>
+                        <Link
+                          className="has-text-black has-text-weight-bold title is-size-1 mt-0 mb-4 block"
+                          to={post.fields.slug}
+                        >
+                          {post.frontmatter.title}
+                        </Link>
+                        <p>
+                          {post.excerpt}
+                          <br />
+                        </p>
+                        <Link className="button mt-1" to={post.fields.slug}>
+                          Keep Reading →
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
+            }
+            return (
+            <div className="column is-4 py-6" key={post.id}>
+              <div>
+                {post.frontmatter.featuredimage ? (
+                  <div className="featured-thumbnail">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: post.frontmatter.featuredimage,
+                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                      }}
+                    />
+                  </div>
+                ) : null}
+              </div>
+              <article className={`blog-list-item is-child`}>
+                <header>
+                  
+                  <p className="has-text-grey has-text-weight-medium is-size-6">
+                    {post.frontmatter.date}
+                  </p>
                   <p className="post-meta">
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="has-text-black has-text-weight-bold title is-size-4"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
                   </p>
                 </header>
                 <p>
-                  {post.excerpt}
+                  {post.frontmatter.description}
                   <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
                 </p>
+                <Link className="button mt-1" to={post.fields.slug}>
+                  Keep Reading →
+                </Link>
               </article>
             </div>
-          ))}
+          )})}
       </div>
     )
   }
@@ -76,19 +114,20 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 340)
               id
               fields {
                 slug
               }
               frontmatter {
                 title
+                description
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 560, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
