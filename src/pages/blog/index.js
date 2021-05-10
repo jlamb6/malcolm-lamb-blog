@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Layout from '../../components/Layout'
 import BlogRoll from '../../components/BlogRoll'
 
@@ -28,7 +27,7 @@ export default class BlogIndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content px-4" style={{fontSize: '0 1em'}}>
-              <BlogRoll />
+              <BlogRoll small={false} />
             </div>
           </div>
         </section>

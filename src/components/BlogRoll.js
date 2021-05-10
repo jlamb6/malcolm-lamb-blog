@@ -2,17 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import BlogPostCard from './BlogPostCard'
 
 class BlogRoll extends React.Component {
   render() {
-    const { data } = this.props
+    const { data, small } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
     return (
       <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }, index) => {
-            if (index === 0) {
+            if (index === 0 && !small.small) {
               return (
                 <div className="column is-12" key={post.id}>
                   <div className="columns">
@@ -34,7 +35,7 @@ class BlogRoll extends React.Component {
                           {post.frontmatter.date}
                         </p>
                         <Link
-                          className="has-text-black has-text-weight-bold title is-size-1 mt-0 mb-4 block"
+                          className="has-text-black has-text-weight-bold title is-size-2 mt-0 mb-4 block"
                           to={post.fields.slug}
                         >
                           {post.frontmatter.title}
@@ -53,42 +54,8 @@ class BlogRoll extends React.Component {
               )
             }
             return (
-            <div className="column is-4 py-6" key={post.id}>
-              <div>
-                {post.frontmatter.featuredimage ? (
-                  <div className="featured-thumbnail">
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                      }}
-                    />
-                  </div>
-                ) : null}
-              </div>
-              <article className={`blog-list-item is-child`}>
-                <header>
-                  
-                  <p className="has-text-grey has-text-weight-medium is-size-6">
-                    {post.frontmatter.date}
-                  </p>
-                  <p className="post-meta">
-                    <Link
-                      className="has-text-black has-text-weight-bold title is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                  </p>
-                </header>
-                <p>
-                  {post.frontmatter.description}
-                  <br />
-                </p>
-                <Link className="button mt-1" to={post.fields.slug}>
-                  Keep Reading →
-                </Link>
-              </article>
+            <div className="column is-4" key={post.id}>
+              <BlogPostCard post={post} key={post.id} />
             </div>
           )})}
       </div>
@@ -97,6 +64,7 @@ class BlogRoll extends React.Component {
 }
 
 BlogRoll.propTypes = {
+  small: PropTypes.shape({small: PropTypes.bool}),
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -104,7 +72,7 @@ BlogRoll.propTypes = {
   }),
 }
 
-export default () => (
+export default (small = false) => (
   <StaticQuery
     query={graphql`
       query BlogRollQuery {
@@ -138,6 +106,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
+    render={(data, count) => <BlogRoll data={data} count={count} small={small} />}
   />
 )
