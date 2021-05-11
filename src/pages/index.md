@@ -1,7 +1,6 @@
 ---
 templateKey: index-page
 title: Welcome to my blog
-<<<<<<< HEAD
 image: /img/blog-index.jpg
 heading: This is a place for my writing
 subheading: Read what I have to say
@@ -14,20 +13,9 @@ mainpitch:
     consequat.
 description: My blog is the best place to get reviews on the most obscure
   fantasy books that can be found at a used book store.
-=======
-image: /img/home-jumbotron.jpg
-heading: Welcome to my blog
-subheading: This is a place for my writing
-mainpitch:
-  title: About Me
-  description: >
-    Here is a little about me and my writing
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
->>>>>>> got bulma styles working, work on main blog layout
+contact:
+  heading: Contact me
+  description: You should get in touch with me
 intro:
   blurbs:
     - image: /img/coffee.png
