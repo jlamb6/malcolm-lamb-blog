@@ -6,7 +6,6 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 
 export const IndexPageTemplate = ({
-  image,
   title,
   heading,
   subheading,
@@ -27,7 +26,7 @@ export const IndexPageTemplate = ({
                   className="subtitle has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                   style={{
                     color: "black",
-                    lineHeight: "1",
+                    lineHeight: "2em",
                     padding: "0.25em 0 0 .2em",
                   }}
                 >
@@ -52,6 +51,34 @@ export const IndexPageTemplate = ({
                 </Link>
               </div>
             </div>
+        </div>
+      </div>
+    </section>
+    <section className="section section--gradient">
+      <div className="container">
+        <div className="section">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="content">
+                <div className="content">
+                  <div className="tile">
+                    <h1 className="title">{mainpitch.title}</h1>
+                  </div>
+                  <div className="tile">
+                    <h3 className="subtitle">{mainpitch.description}</h3>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-12">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      {heading}
+                    </h3>
+                    <p>{description}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -104,7 +131,6 @@ export const IndexPageTemplate = ({
 );
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
@@ -148,13 +174,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         heading
         subheading
         mainpitch {
