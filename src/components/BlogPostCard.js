@@ -17,28 +17,28 @@ export default function BlogPostCard({ post }) {
             />
           </div>
         ) : null}
+        <article className="blog-list-item is-child">
+          <header>
+            <p className="has-text-grey has-text-weight-normal is-size-7 mb-2">
+              {post.frontmatter.date}
+            </p>
+            <p className="post-meta">
+              <Link
+                className="has-text-black has-text-weight-bold title is-size-4"
+                to={post.fields.slug}
+              >
+                {post.frontmatter.title}
+              </Link>
+            </p>
+          </header>
+          <p>
+            {post.frontmatter.description}
+            <br />
+          </p>
+        </article>
       </div>
-      <article className="blog-list-item is-child">
-        <header>
-          <p className="has-text-grey has-text-weight-medium is-size-6">
-            {post.frontmatter.date}
-          </p>
-          <p className="post-meta">
-            <Link
-              className="has-text-black has-text-weight-bold title is-size-4"
-              to={post.fields.slug}
-            >
-              {post.frontmatter.title}
-            </Link>
-          </p>
-        </header>
-        <p>
-          {post.frontmatter.description}
-          <br />
-        </p>
-      </article>
       <div className="blog-item-footer">
-        <Link className="button mt-1" to={post.fields.slug}>
+        <Link className="button mt-1 is-link is-light" to={post.fields.slug}>
           Keep Reading →
         </Link>
       </div>

@@ -18,13 +18,13 @@ export const IndexPageTemplate = ({
     <div className="section">
       <div className="container">
         <div className="section">
-          <div className="columns">
+          <div className="columns mt-6">
             <div className="column is-full has-text-centered">
                 <h1 className="title-large has-text-weight-bold" >
                   {title}
                 </h1>
                 <h3
-                  className="subtitle has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+                  className="subtitle has-text-weight-medium-light is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                   style={{
                     color: "black",
                     lineHeight: "2em",
@@ -41,14 +41,14 @@ export const IndexPageTemplate = ({
     <section className="section section--gradient">
       <div className="container">
         <div className="columns py-6">
-          <div className="column is-full">
+          <div className="column is-10 is-offset-1">
               <h3 className="has-text-centered has-text-weight-semibold is-size-2 mb-6">
                 Latest stories
               </h3>
               <BlogRoll small />
               <div className="column is-12 has-text-centered">
-                <Link className="btn" to="/blog">
-                  Visit my blog
+                <Link className="button is-primary is-medium" to="/blog">
+                  View blog
                 </Link>
               </div>
             </div>
@@ -60,22 +60,12 @@ export const IndexPageTemplate = ({
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
+              <h3 className="has-text-centered has-text-weight-semibold is-size-2 mb-6">
+                {mainpitch.title}
+              </h3>
+              <div className="column">
+                  <div className="box p-6">
+                    <p className="subtitle">{mainpitch.description}</p>
                 </div>
               </div>
             </div>
@@ -83,23 +73,23 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section section--gradient">
+    {false && <section className="section section--gradient">
       <div className="container">
-        <div className="columns py-6">
-          <div className="column is-full">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
               <h3 className="has-text-centered has-text-weight-semibold is-size-2 mb-6">
                 Featured Work
               </h3>
               <Features gridItems={intro.blurbs} />
               <div className="column is-12 has-text-centered">
-                <Link className="btn" to="/portfolio">
+                <Link className="button is-primary is-medium" to="/portfolio">
                   View portfolio
                 </Link>
               </div>
             </div>
         </div>
       </div>
-    </section>
+    </section>}
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -107,20 +97,14 @@ export const IndexPageTemplate = ({
             <div className="column is-10 is-offset-1">
               <div className="content">
                 <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{contact.heading}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{contact.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
+                  <h3 className="has-text-centered has-text-weight-semibold is-size-2 mb-6">
+                    {contact.heading}
+                  </h3>
+                  <div className="column is-12 has-text-centered">
+                <Link className="button is-primary is-medium" to="/contact">
+                  Contact me
+                </Link>
+              </div>
                 </div>
               </div>
             </div>

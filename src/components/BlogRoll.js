@@ -30,24 +30,24 @@ class BlogRoll extends React.Component {
                       ) : null}
                     </div>
                     <div className="column">
-                      <div className="px-2">
-                        <p className="has-text-grey has-text-weight-medium is-size-6">
-                          {post.frontmatter.date}
-                        </p>
-                        <Link
-                          className="has-text-black has-text-weight-bold title is-size-2 mt-0 mb-4 block"
-                          to={post.fields.slug}
-                        >
-                          {post.frontmatter.title}
-                        </Link>
-                        <p>
-                          {post.excerpt}
-                          <br />
-                        </p>
-                        <Link className="button mt-1" to={post.fields.slug}>
+                        <div className="mb-4">
+                          <p className="has-text-grey has-text-weight-medium is-size-6">
+                            {post.frontmatter.date}
+                          </p>
+                          <Link
+                            className="has-text-black has-text-weight-bold title is-size-2 mt-0 mb-4 block"
+                            to={post.fields.slug}
+                          >
+                            {post.frontmatter.title}
+                          </Link>
+                          <p>
+                            {post.excerpt}
+                            <br />
+                          </p>
+                        </div>
+                        <Link className="button mt-1 is-link is-light" to={post.fields.slug}>
                           Keep Reading →
                         </Link>
-                      </div>
                     </div>
                   </div>
                 </div>

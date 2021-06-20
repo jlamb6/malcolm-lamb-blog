@@ -38,8 +38,24 @@ export default class Index extends React.Component {
       <Layout>
         <section className="section">
           <div className="container">
-            <div className="content">
-              <h1>Contact</h1>
+            <div
+              className="blog-header is-size-1 margin-top-0"
+            >
+              <h1
+                className="has-text-weight-bold title"
+                style={{
+                  color: 'black',
+                  padding: '0 1rem',
+                  fontSize: '1.8em'
+                }}
+              >
+                Contact
+              </h1>
+            </div>
+          </div>
+          <div className="container">
+            <div className="box p-6 my-6">
+            <div className="content p-4">
               <form
                 name="contact"
                 method="post"
@@ -107,6 +123,7 @@ export default class Index extends React.Component {
                 </div>
               </form>
             </div>
+          </div>
           </div>
         </section>
       </Layout>

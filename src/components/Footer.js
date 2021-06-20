@@ -30,12 +30,12 @@ const Footer = class extends React.Component {
                         About
                       </Link>
                     </li>
-                    <li>
+                    {false && <li>
                       <Link className="navbar-item" to="/portfolio">
                         Portfolio
                       </Link>
-                    </li>
-                    <li>
+                    </li>}
+                    {false && <li>
                       <a
                         className="navbar-item"
                         href="/admin/"
@@ -44,7 +44,7 @@ const Footer = class extends React.Component {
                       >
                         Admin
                       </a>
-                    </li>
+                    </li>}
                   </ul>
                 </section>
               </div>
@@ -65,6 +65,7 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
+                {false && <>
                 <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
@@ -94,6 +95,7 @@ const Footer = class extends React.Component {
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
+                </>}
               </div>
             </div>
           </div>
