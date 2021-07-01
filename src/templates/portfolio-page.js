@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const PortfolioPageTemplate = ({ title, content, contentComponent }) => {
+export const PortfolioPageTemplate = ({ title, heading, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -26,7 +26,7 @@ export const PortfolioPageTemplate = ({ title, content, contentComponent }) => {
         </div>
       </div>
       <div className="container">
-      
+        <PageContent className="content px-3 my-6" content={content} />
       </div>
     </section>
   )
@@ -34,36 +34,47 @@ export const PortfolioPageTemplate = ({ title, content, contentComponent }) => {
 
 PortfolioPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  heading: PropTypes.string,
+  description: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
 const PortfolioPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { frontmatter } = data.markdownRemark;
+  console.log(frontmatter);
 
   return (
     <Layout>
       <PortfolioPageTemplate
+        heading={frontmatter.heading}
+        title={frontmatter.title}
+        description={frontmatter.description}
         contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
+        content={frontmatter.html}
       />
     </Layout>
   )
 }
 
 PortfolioPage.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object,
+    }),
+  }),
 }
 
 export default PortfolioPage
 
 export const portfolioPageQuery = graphql`
-  query PortfolioPage($id: String!) {
+  query PortfolioPageTemplate($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
+      html,
       frontmatter {
-        title
+        title,
+        heading,
+        description,
       }
     }
   }
