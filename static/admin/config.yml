@@ -96,6 +96,17 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/blog/index.md"
+        label: "Blog"
+        name: "blog"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "blog-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
       - file: "src/pages/portfolio/index.md"
         label: "Portfolio Page"
         name: "portfolio"
@@ -110,18 +121,22 @@ collections:
           - { label: Heading, name: heading, widget: string }
           - { label: Description, name: description, widget: string }
           - {
-              label: Featured Work Uploads,
-              name: featuredWork,
-              widget: list,
-              field:
-                {
-                  label: File,
-                  name: file,
-                  widget: file,
-                  media_library: {
-                    config: {
-                      multiple: false
+              label: "Featured Work Uploads",
+              name: "featuredWork",
+              widget: "list",
+              fields:
+                [
+                  {
+                    label: "File",
+                    name: "file",
+                    widget: "file",
+                    media_library: {
+                      config: {
+                        multiple: false
+                      }
                     }
-                  }
-                },
+                  },
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" }
+                ]
             }

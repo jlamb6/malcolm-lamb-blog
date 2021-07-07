@@ -36,6 +36,7 @@ PortfolioPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   heading: PropTypes.string,
   description: PropTypes.string,
+  featuredWork: PropTypes.object,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -75,6 +76,11 @@ export const portfolioPageQuery = graphql`
         title,
         heading,
         description,
+        featuredWork {
+          file,
+          title,
+          description
+        }
       }
     }
   }
