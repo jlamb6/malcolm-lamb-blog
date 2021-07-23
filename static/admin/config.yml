@@ -125,8 +125,7 @@ collections:
               name: "featuredWork",
               widget: "list",
               fields:
-                [
-                  {
+                - {
                     label: "File",
                     name: "file",
                     widget: "file",
@@ -136,7 +135,6 @@ collections:
                       }
                     }
                   },
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Description", name: "description", widget: "string" }
-                ]
+                - { label: "Title", name: "title", widget: "string" },
+                - { label: "Description", name: "description", widget: "string" }
             }

@@ -53,6 +53,7 @@ const PortfolioPage = ({ data }) => {
         description={frontmatter.description}
         contentComponent={HTMLContent}
         content={frontmatter.html}
+        featuredWork={frontmatter.featuredWork}
       />
     </Layout>
   )
@@ -61,7 +62,12 @@ const PortfolioPage = ({ data }) => {
 PortfolioPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+        heading: PropTypes.string,
+        description: PropTypes.string,
+        featuredWork: PropTypes.object,
+      }),
     }),
   }),
 }

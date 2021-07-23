@@ -1,6 +1,6 @@
 ---
 templateKey: portfolio-page
-path: /about
+path: /portfolio
 title: My Portfolio!!
 heading: "This is my best stuff "
 description: read it foo
