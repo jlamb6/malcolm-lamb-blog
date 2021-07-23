@@ -124,17 +124,17 @@ collections:
               label: "Featured Work Uploads",
               name: "featuredWork",
               widget: "list",
-              fields:
-                - {
+              fields: [
+                { 
                     label: "File",
                     name: "file",
-                    widget: "file",
+                    widget: file,
                     media_library: {
                       config: {
                         multiple: false
                       }
                     }
                   },
-                - { label: "Title", name: "title", widget: "string" },
-                - { label: "Description", name: "description", widget: "string" }
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Description", name: "description", widget: "string" }]
             }
