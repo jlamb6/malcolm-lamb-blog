@@ -1,9 +1,8 @@
 ---
-templateKey: blog-post
-title: Second blog post
-date: 2021-07-27T04:24:41.341Z
-description: This is a blog post
-featuredimage: /img/og-image.jpg
+title: Third Post
+date: 2021-07-27T04:33:37.726Z
+description: This is a description
+featuredimage: /img/home-jumbotron.jpg
 ---
 <!--StartFragment-->
 
