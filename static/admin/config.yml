@@ -18,12 +18,6 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "blog-post",
-        }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
@@ -96,16 +90,10 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/blog/index.md"
+      - file: "src/pages/index.js"
         label: "Blog"
         name: "blog"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "blog-page",
-            }
           - { label: "Title", name: "title", widget: "string" }
       - file: "src/pages/portfolio/index.md"
         label: "Portfolio Page"
