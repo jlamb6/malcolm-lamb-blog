@@ -19,7 +19,7 @@ class BlogRoll extends React.Component {
                 <div className="column is-12" key={post.id}>
                   <div className="columns">
                     <div className="column is-7 thumbnail-large">
-                      {post.frontmatter.featuredimage ? (
+                      {post.frontmatter.featuredimage && (
                         <div className="featured-thumbnail">
                           <PreviewCompatibleImage
                             imageInfo={{
@@ -28,7 +28,7 @@ class BlogRoll extends React.Component {
                             }}
                           />
                         </div>
-                      ) : null}
+                      )}
                     </div>
                     <div className="column">
                         <div className="mb-4">
