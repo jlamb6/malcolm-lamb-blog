@@ -5,6 +5,8 @@ date: 2021-07-27T04:24:41.341Z
 description: This is a blog post
 featuredimage: /img/og-image.jpg
 ---
+![beans ](/img/home-jumbotron.jpg "these beans boy")
+
 <!--StartFragment-->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis. Risus quis varius quam quisque id diam. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Non curabitur gravida arcu ac tortor dignissim convallis. Mauris in aliquam sem fringilla ut morbi tincidunt augue. Nec tincidunt praesent semper feugiat. Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc. Quam pellentesque nec nam aliquam. Felis eget nunc lobortis mattis aliquam faucibus. Ut pharetra sit amet aliquam id diam maecenas ultricies. Duis at tellus at urna condimentum mattis pellentesque id nibh. Id semper risus in hendrerit gravida rutrum quisque. Quam id leo in vitae turpis massa sed elementum. Ornare quam viverra orci sagittis.
