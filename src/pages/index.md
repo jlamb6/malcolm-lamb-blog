@@ -1,46 +1,19 @@
 ---
 templateKey: index-page
-title: Welcome to my blog
-heading: This is a place for my writing
-subheading: Read what I have to say
+title: You're Probably Wondering Why You're Here
+heading: "xdfdfdf "
+subheading: Don't Panic.
 mainpitch:
-  title: Fantasy Books For All
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.
+  title: My Writing
+  description: "Feel free to poke around in my portfolio. There, you'll find short
+    stories, essays, excerpts from my novels and a link to my current project so
+    you can read as I write! "
 intro:
   blurbs:
-    - image: /img/coffee.png
-      text: >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Elit sed vulputate
-        mi sit amet mauris. Cras pulvinar mattis nunc sed blandit libero
-        volutpat.
-    - image: /img/coffee-gear.png
-      text: >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Elit sed vulputate
-        mi sit amet mauris. Cras pulvinar mattis nunc sed blandit libero
-        volutpat.
-    - image: /img/tutorials.png
-      text: >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Elit sed vulputate
-        mi sit amet mauris. Cras pulvinar mattis nunc sed blandit libero
-        volutpat.
-    - image: /img/meeting-space.png
-      text: >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Elit sed vulputate
-        mi sit amet mauris. Cras pulvinar mattis nunc sed blandit libero
-        volutpat.
+    - text: dfsdfsd
+      image: /img/blog-index.jpg
   heading: A Little About Me
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Elit sed vulputate mi
-    sit amet mauris. Cras pulvinar mattis nunc sed blandit libero volutpat.
+  description: "\n"
 contact:
   heading: Get in touch
   description: You should get in touch with me
@@ -61,6 +34,5 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 image: /img/blog-index.jpg
-description: My blog is the best place to get reviews on the most obscure
-  fantasy books that can be found at a used book store.
+description: dfdd
 ---
