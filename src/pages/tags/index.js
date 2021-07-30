@@ -4,16 +4,16 @@ import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 
-const TagsPage = ({
+const TagsPage = (title = "", group = []/*{
   data: {
     allMarkdownRemark: { group },
     site: {
       siteMetadata: { title },
     },
   },
-}) => (
+}*/) => (
   <Layout>
-    <section className="section">
+    {false && <section className="section">
       <Helmet title={`Tags | ${title}`} />
       <div className="container content">
         <div className="columns">
@@ -34,12 +34,12 @@ const TagsPage = ({
           </div>
         </div>
       </div>
-    </section>
+    </section>}
   </Layout>
 )
 
 export default TagsPage
-
+/*
 export const tagPageQuery = graphql`
   query TagsQuery {
     site {
@@ -55,3 +55,4 @@ export const tagPageQuery = graphql`
     }
   }
 `
+*/

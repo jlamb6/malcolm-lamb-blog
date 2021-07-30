@@ -92,7 +92,6 @@ export default (small = false) => (
                 description
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
-                featuredpost
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 560, quality: 100) {
