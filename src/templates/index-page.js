@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Features from "../components/Features";
+//import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 
 export const IndexPageTemplate = ({
@@ -80,7 +80,7 @@ export const IndexPageTemplate = ({
               <h3 className="has-text-centered has-text-weight-semibold is-size-2 mb-6">
                 Featured Work
               </h3>
-              <Features gridItems={intro.blurbs} />
+              {/*<Features gridItems={intro.blurbs} />*/}
               <div className="column is-12 has-text-centered">
                 <Link className="button is-primary is-medium" to="/portfolio">
                   View portfolio
