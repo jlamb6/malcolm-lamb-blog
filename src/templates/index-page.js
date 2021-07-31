@@ -18,7 +18,7 @@ export const IndexPageTemplate = ({
     <div className="section">
       <div className="container">
         <div className="section">
-          <div className="columns mt-6">
+          <div className="columns">
             <div className="column is-full has-text-centered">
                 <h1 className="title-large has-text-weight-bold" >
                   {title}

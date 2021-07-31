@@ -39,7 +39,7 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
+        <div className="container" style={{padding: "1.5em", justifyContent: "space-between"}}>
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Home">
               <div style={{ width: '88px' }}>

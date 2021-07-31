@@ -13,18 +13,23 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  date,
 }) => {
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section className="section" style={{display: "flex", justifyContent: "space-around"}}>
       {helmet || ''}
-      <div className="container content">
+      <div className="content blog-container">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+          <div className="column">
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light has-text-black">
               {title}
             </h1>
+            <div className="post-subtext">
+              <div>Malcolm Lamb</div>
+              <div>{date}</div>
+            </div>
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
@@ -74,6 +79,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        date={post.frontmatter.date}
       />
     </Layout>
   )

@@ -48,6 +48,10 @@ $black: black
   border: 1px solid #dbdbdb
   border-radius: 4px
 
+.blog-container 
+  max-width: 720px
+  margin: 0 64px
+
 .blog-header
   width: 100vw
   display: flex
@@ -144,9 +148,27 @@ $is-size-1: 4em
 .blog-list-item .featured-thumbnail
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
-
+.post-subtext
+  display: flex
+  flex-direction: row
+  margin-bottom: 1.5em
+.post-subtext > div:first-of-type()
+  color: #2c925e 
+  margin-right: 12px
+.post-subtext > div
+  color: #757575
 
 @import "~bulma"
+
+.content p 
+  line-height: 32px
+  font-size: 18px
+
+.content h1.title
+  color #292929
+
+.navbar-menu
+  flex-grow: 0
 
 // responsiveness
 +tablet-only
@@ -160,3 +182,4 @@ $is-size-1: 4em
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+
