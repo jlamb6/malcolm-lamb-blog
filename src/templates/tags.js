@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 
 class TagRoute extends React.Component {
   render() {
-    /*const posts = this.props.data.allMarkdownRemark.edges
+    const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map((post) => (
       <li key={post.node.fields.slug}>
         <Link to={post.node.fields.slug}>
@@ -18,11 +18,11 @@ class TagRoute extends React.Component {
     const totalCount = this.props.data.allMarkdownRemark.totalCount
     const tagHeader = `${totalCount} post${
       totalCount === 1 ? '' : 's'
-    } tagged with “${tag}”`*/
+    } tagged with “${tag}”`
 
     return (
       <Layout>
-        {/*<section className="section">
+        {<section className="section">
           <Helmet title={`${tag} | ${title}`} />
           <div className="container content">
             <div className="columns">
@@ -38,14 +38,14 @@ class TagRoute extends React.Component {
               </div>
             </div>
           </div>
-        </section>*/}
+        </section>}
       </Layout>
     )
   }
 }
 
-//export default TagRoute
-/*
+export default TagRoute
+
 export const tagPageQuery = graphql`
   query TagPage($tag: String) {
     site {
@@ -75,4 +75,3 @@ export const tagPageQuery = graphql`
     }
   }
 `
-*/
