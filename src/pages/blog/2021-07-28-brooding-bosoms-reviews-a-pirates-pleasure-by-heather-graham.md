@@ -5,6 +5,7 @@ date: 2021-07-28T21:59:54.293Z
 description: "In which you learn more than you ever thought you'd know about
   romance novels. "
 featuredimage: /img/pirate-spleasure.jpeg
+tags: ["romance", "Heather Graham", "pirates"]
 ---
 I guess I should explain myself. On our first date, I took my wife to a book fair at Parque Retiro in Madrid. While we were browsing the booths, we came across a display of bodice rippers. After cracking a few jokes at the expense of heaving bosoms and brooding bachelors, we were chased away by a very passionate kiosk attendant who did not take kindly to our casual disparagement of her favorite literary genre. How insensitive we were. How ignorant. We scoffed. We brayed. We guffawed. 
 

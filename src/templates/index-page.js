@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
         <div className="section">
           <div className="columns">
             <div className="column is-full has-text-centered">
-                <h1 className="title-large has-text-weight-bold" >
+                <h1 className="title-large has-text-weight-bold landing-title" >
                   {title}
                 </h1>
                 <h3

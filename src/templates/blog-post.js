@@ -30,7 +30,6 @@ export const BlogPostTemplate = ({
               <div>Malcolm Lamb</div>
               <div>{date}</div>
             </div>
-            <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -102,6 +101,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        tags
       }
     }
   }

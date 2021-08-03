@@ -44,7 +44,7 @@ class TagRoute extends React.Component {
   }
 }
 
-export default TagRoute
+//export default TagRoute
 /*
 export const tagPageQuery = graphql`
   query TagPage($tag: String) {
@@ -55,7 +55,10 @@ export const tagPageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 1000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { 
+        fields: [frontmatter___date], 
+        order: DESC 
+      }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount

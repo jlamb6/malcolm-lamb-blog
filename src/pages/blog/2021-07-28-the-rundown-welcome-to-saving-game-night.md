@@ -4,6 +4,7 @@ title: "The Rundown: Welcome to Saving Game Night"
 date: 2021-07-28T21:33:49.361Z
 description: "Hello from the past. "
 featuredimage: /img/countdown.jpg
+tags: ["anime", "authors", "blog"]
 ---
 ![Pictured: My nightmares](/img/ghostwriterimage.jpeg "Me, talking to me")
 

@@ -21,7 +21,7 @@ export default class BlogIndexPage extends React.Component {
                     fontSize: '1.8em'
                   }}
                 >
-                  The Blog
+                  Saving Game Night
                 </h1>
               </div>
             </div>
