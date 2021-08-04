@@ -1,11 +1,14 @@
 ---
 templateKey: index-page
-title: You're Probably Wondering Why You're Here
-heading: "xdfdfdf "
-subheading: Don't Panic.
+title: "You're Here, but Should You Have Come? "
+heading: dfdfd
+subheading: "Why Don't You Read and Find Out? "
 mainpitch:
-  title: My Writing
-  description: "Feel free to poke around in my portfolio. There, you'll find short
+  title: Read My Stuff
+  description: "You can check out my blog where I give weekly updates on my
+    writing, review Romance/Sci-Fi/Fantasy books, and rant like a maniac about
+    anything that frustrates errr... interests me. And if that doesn't scare you
+    off, feel free to poke around in my portfolio. There, you'll find short
     stories, essays, excerpts from my novels and a link to my current project so
     you can read as I write! "
 intro:
@@ -15,7 +18,7 @@ intro:
   heading: A Little About Me
   description: "\n"
 contact:
-  heading: Get in touch
+  heading: Get in Touch
   description: You should get in touch with me
 main:
   heading: Great coffee with no compromises
