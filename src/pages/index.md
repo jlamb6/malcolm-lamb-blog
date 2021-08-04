@@ -6,16 +6,7 @@ subheading: "Why Don't You Read and Find Out? "
 mainpitch:
   title: "Current Project: Epic Fantasy: Kabakra"
   description: >-
-    A young man crosses an uncrossable desert on a journey which will take him
-    to the other side of the world. His first stop, the city of Pirran. There,
-    he enters the Kabakra, a deadly tournament in which warriors risk their
-    lives for a chance at winning the prize: a sword of pure Varsteel, a metal
-    which can seamlessly integrate with organic material. While in Pirran, he
-    meets Vivi, a girl who will give him a place to stay in exchange for 3
-    "favors." 
-
-
-    Inspired by my loved of tournament arcs in anime and my desire to see if one might work in a fantasy novel. 
+    I wanted to try an anime style tournament arc in a standalone fantasy book. 
 
 
     Updated Mondays. 
