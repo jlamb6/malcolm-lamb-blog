@@ -4,13 +4,22 @@ title: "You're Here, but Should You Have Come? "
 heading: dfdfd
 subheading: "Why Don't You Read and Find Out? "
 mainpitch:
-  title: Read My Stuff!
+  title: "Current Project: Epic Fantasy: Kabakra"
   description: >-
-    Poke around my portfolio! There, you'll find all the writing I'm not ashamed
-    of, essays, short stories, and excerpts from my novels (excluding the one
-    from high school that we don't talk about). 
+    A young man crosses an uncrossable desert on a journey which will take him
+    to the other side of the world. His first stop, the city of Pirran. There,
+    he enters the Kabakra, a deadly tournament in which warriors risk their
+    lives for a chance at winning the prize: a sword of pure Varsteel, a metal
+    which can seamlessly integrate with organic material. While in Pirran, he
+    meets Vivi, a girl who will give him a place to stay in exchange for 3
+    "favors." 
 
-    To keep up with my writing, follow this link where I post chapters of my current project as I write it! 
+
+    Inspired by my loved of tournament arcs in anime and my desire to see if one might work in a fantasy novel. 
+
+
+    Updated Mondays. 
+
 
     https://docs.google.com/document/d/1nlcrtG382WfSfLRafRuL6u707fOhgG3RLrrw-X_aBfw/edit?usp=sharing
 intro:
