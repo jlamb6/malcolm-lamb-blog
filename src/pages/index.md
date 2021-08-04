@@ -4,13 +4,15 @@ title: "You're Here, but Should You Have Come? "
 heading: dfdfd
 subheading: "Why Don't You Read and Find Out? "
 mainpitch:
-  title: Read My Stuff
-  description: "You can check out my blog where I give weekly updates on my
-    writing, review Romance/Sci-Fi/Fantasy books, and rant like a maniac about
-    anything that frustrates errr... interests me. And if that doesn't scare you
-    off, feel free to poke around in my portfolio. There, you'll find short
-    stories, essays, excerpts from my novels and a link to my current project so
-    you can read as I write! "
+  title: Read My Stuff!
+  description: >-
+    Poke around my portfolio! There, you'll find all the writing I'm not ashamed
+    of, essays, short stories, and excerpts from my novels (excluding the one
+    from high school that we don't talk about). 
+
+    To keep up with my writing, follow this link where I post chapters of my current project as I write it! 
+
+    https://docs.google.com/document/d/1nlcrtG382WfSfLRafRuL6u707fOhgG3RLrrw-X_aBfw/edit?usp=sharing
 intro:
   blurbs:
     - text: dfsdfsd
