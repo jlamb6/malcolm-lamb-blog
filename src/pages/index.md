@@ -9,10 +9,7 @@ mainpitch:
     I wanted to try an anime style tournament arc in a standalone fantasy book. 
 
 
-    Updated Mondays. 
-
-
-    https://docs.google.com/document/d/1nlcrtG382WfSfLRafRuL6u707fOhgG3RLrrw-X_aBfw/edit?usp=sharing
+    Updated Mondays. [Read here.](https://docs.google.com/document/d/1nlcrtG382WfSfLRafRuL6u707fOhgG3RLrrw-X_aBfw/edit?usp=sharing)
 intro:
   blurbs:
     - text: dfsdfsd
