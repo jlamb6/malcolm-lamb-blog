@@ -4,16 +4,20 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 //import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import Content, { HTMLContent } from '../components/Content'
 
 export const IndexPageTemplate = ({
   title,
   heading,
   subheading,
   mainpitch,
-  description,
   contact,
+  contentComponent,
   intro,
-}) => (
+}) => {
+  
+  const PostContent = contentComponent || Content
+  return (
   <div>
     <div className="section">
       <div className="container">
@@ -65,7 +69,8 @@ export const IndexPageTemplate = ({
               </h3>
               <div className="column">
                   <div className="box p-6">
-                    <p className="subtitle">{mainpitch.description}</p>
+                    {false && <p className="subtitle">{mainpitch.description}</p>}
+                    <PostContent content={mainpitch.description} />
                 </div>
               </div>
             </div>
@@ -113,15 +118,15 @@ export const IndexPageTemplate = ({
       </div>
     </section>
   </div>
-);
+)};
 
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string,
   contact: PropTypes.object,
+  contentComponent: PropTypes.func,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -138,8 +143,8 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
         intro={frontmatter.intro}
+        contentComponent={HTMLContent}
       />
     </Layout>
   );
@@ -166,7 +171,6 @@ export const pageQuery = graphql`
           title
           description
         }
-        description
         contact {
           heading
           description
