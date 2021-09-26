@@ -69,8 +69,10 @@ export const IndexPageTemplate = ({
               </h3>
               <div className="column">
                   <div className="box p-6">
-                    {false && <p className="subtitle">{mainpitch.description}</p>}
-                    <PostContent content={mainpitch.description} />
+                    <p className="subtitle">{mainpitch.description}</p>
+                    <Link target="_blank" to="https://docs.google.com/document/d/1nlcrtG382WfSfLRafRuL6u707fOhgG3RLrrw-X_aBfw/edit?usp=sharing">
+                      Read here
+                    </Link>
                 </div>
               </div>
             </div>
