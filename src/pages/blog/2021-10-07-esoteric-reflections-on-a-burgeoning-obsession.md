@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Esoteric Reflections on a Burgeoning Obsession
 date: 2021-10-07T17:36:45.221Z
 description: "Unfortunately, this will not be the last time that I ramble about
-  Digibro on this blog. "
+  a relatively obscure anime Youtuber on this blog. "
 featuredimage: /img/digibro-avatar.jpg
 tags: []
 ---
