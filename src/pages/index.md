@@ -1,12 +1,15 @@
 ---
 templateKey: index-page
-title: "You're Here, but Should You Have Come? "
+title: Have You Read My Book
 heading: dfdfd
-subheading: "Why Don't You Read and Find Out? "
+subheading: "Would You Like To? "
 mainpitch:
   title: "Current Project: Epic Fantasy: Kabakra"
   description: >-
-    I wanted to try an anime style tournament arc in a standalone fantasy book. 
+    This link will take you to a google doc where I post new chapters of Kabakra
+    as a I write them. 
+
+    First Draft: 20% Complete
 
     Updated Mondays.
 intro:
