@@ -6,10 +6,11 @@ subheading: "Would You Like To? "
 mainpitch:
   title: "Current Project: Epic Fantasy: Kabakra"
   description: >-
-    This link will take you to a google doc where I post new chapters of Kabakra
-    as a I write them. 
+    Does an anime style tournament arc in book form sound cool to you? It did to
+    me, and that's what Kabakra is. Click the link below where I post chapters
+    as I complete them!
 
-    First Draft: 20% Complete
+    First Draft: 20% Complete. 
 
     Updated Mondays.
 intro:
