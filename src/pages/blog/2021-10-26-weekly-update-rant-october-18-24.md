@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Weekly Update + Rant (October 18-24) "
-date: 2021-10-28T22:42:03.630Z
+date: 2021-10-25T22:42:03.630Z
 description: "My thoughts about Kabakra Chapter 14 in which I try my hand at
   doing a pastiche of epic, oral storytelling. Also, I ramble about the
   existential threat posed by CG mechs in anime. "
