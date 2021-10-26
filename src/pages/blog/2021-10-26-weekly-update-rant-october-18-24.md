@@ -25,13 +25,15 @@ At one point, the protagonist of the myth just whips out his sword and starts wh
 
 I think when we look at storytelling, we have a tendency to affix such tight rules to it. We want to distill it to a science. We place all this value on realism and continuity, and yet we have thousands of years of stories which do not play by those rules. The Iliad rules, and yet it bears very little similarity to what we would today consider a “good” story. Indulging in a little rule breaking during my short pastiche was a delight. 
 
-Another Week, Another Rant 
+**Another Week, Another Rant** 
+
+![](/img/hathaway-gundam-2.png "Love this image")
 
 As if it isn’t totally obvious, I’ve been on a bit of a Gundam kick recently. This might lead you to believe that I’m actually watching a lot of Gundam. Tsk tsk. Actually, I’m crawling my way through Zeta Gundam at the brisk pace of about 4 episodes a week. As usual, my meta-knowledge of something that I love has quickly outpaced my actual consumption. 
 
 This week, I stumbled upon an article about the new Hathaway’s Flash movie which just came out. It was a great read, full of quotes from the director and other stuff which you don’t normally get from anime journalism. All the better that it confirmed some long-held suspicions I’ve had about the current anime industry, namely that nobody knows how to animate robots anymore. 
 
-Okay, so that’s not entirely true, and the article is careful to say as much, but seriously. This is anime we’re talking about. It was literally built on the back of Gundam, reinvented by Neon Genesis Evangelion, and then (insert appropriate verb here) by Tengan Toppa Gurren Lagann. Mecha is as much a part of anime as McDonalds is to American history, but in the year 2021, a studio like Sunrise (AKA THE mecha studio) can’t find inbetween animators who know how to draw robots and are forced to make all the mechs in Hathaway’s Flash 3DCG. 
+Okay, so that’s not entirely true, and the article is careful to say as much, but seriously. This is anime we’re talking about. It was literally built on the back of Gundam, reinvented by Neon Genesis Evangelion, and then (insert appropriate verb here) by Tengan Toppa Gurren Lagann. Mecha is as much a part of anime as McDonalds is to America, but in the year 2021, a studio like Sunrise (AKA THE mecha studio) can’t find in-between animators who know how to draw robots and are forced to make all the mechs in Hathaway’s Flash 3DCG. 
 
 Literally how does this happen??? 
 
