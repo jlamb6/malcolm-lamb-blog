@@ -1,18 +1,12 @@
 ---
 templateKey: index-page
-title: Have You Read My Book
+title: "Hi, I'm Malcolm "
 heading: dfdfd
-subheading: "Would You Like To? "
+subheading: Author of such noteworthy works as The Boring Sunday and its
+  blockbuster sequel, The Ninja Sunday
 mainpitch:
-  title: "Current Project: Epic Fantasy: Kabakra"
-  description: >-
-    Does an anime style tournament arc in book form sound cool to you? It did to
-    me, and that's what Kabakra is. Click the link below where I post chapters
-    as I complete them!
-
-    First Draft: 20% Complete. 
-
-    Updated Mondays.
+  title: "I Am A Writer "
+  description: "Hey! I'm Malcolm Lamb, and I'm a science fiction and fantasy writer. "
 intro:
   blurbs:
     - text: dfsdfsd
